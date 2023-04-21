@@ -26,6 +26,7 @@ passwordText.value = password;
  var specialChar = confirm("Do you want your password to contain special characters?");
  var passwordLength = prompt("Choose a password length of at least 8 characters and no more than 128 characters.");
 
+ // Password must be betweeen 8 - 128 characters
  if (passwordLength < 8 || passwordLength > 128) {
   alert("Your password is not between 8 characters and 128 characters. Please try again.");
   var passwordLength = prompt("Choose a password length of at least 8 characters and no more than 128 characters.");
@@ -40,6 +41,7 @@ passwordText.value = password;
   var specialChar = confirm("Do you want your password to contain special characters?");
 }
 
+// Password criteria
  if (lowercaseLett) {
   optionsVariable += lowercaseAlphabet;
 }
